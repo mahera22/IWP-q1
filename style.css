@@ -1,0 +1,120 @@
+body{
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 15px;
+}
+.head{
+    text-align: center;
+    position: relative;
+}
+.subhead{
+    border: 2px solid #2f2f2f;
+}
+.Weather{
+    font-style: italic;
+    position: relative;
+    width: 15%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+}
+.column{
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+.column + .column { 
+  border-left: 1px solid #2f2f2f;
+}
+.column .headline{
+    text-align: center;
+    line-height: normal;
+    display: block;
+    margin: 0 auto;
+}
+.column .headline{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+}
+.column .subHeadline{
+    font-size: 20px;
+    font-weight: 700;
+}
+.column .citation{
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+}
+
+.column .figure {
+	  margin: 0 0 20px;
+}
+.column .figcaption{
+	font-style: italic;
+	font-size: 12px;
+}
+
+@media only all and (max-width: 1300px) {
+    .Weather{
+        display: none;
+    }
+}
+@media only all and (max-width: 1200px) {
+    .column{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .column{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
+	.column + .column {
+				border-left: none;
+      	border-bottom: 1px solid #2f2f2f;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+}
